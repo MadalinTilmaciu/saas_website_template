@@ -22,12 +22,10 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     GestureDetector(
+                      onTap: () {},
                       child: Row(
                         children: <Widget>[
-                          IconButton(
-                            onPressed: () {},
-                            icon: Image.asset('assets/icons/logo.png'),
-                          ),
+                          Image.asset('assets/icons/logo.png'),
                           const Text(
                             'SaaS Template',
                             style: TextStyle(
