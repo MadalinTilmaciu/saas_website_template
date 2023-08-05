@@ -1,3 +1,5 @@
+name: Check code format
+
 on:
   push:
 
