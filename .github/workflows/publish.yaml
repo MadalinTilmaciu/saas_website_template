@@ -1,0 +1,49 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Code
+      - uses: actions/checkout@v2
+
+      - name: Install flutter
+        uses: subosito/flutter-action@v2
+
+      - name: Get packages
+      - run: flutter pub get
+
+      - name: Run tests if any found
+      - run: flutter test
+
+      - name: Enable web configuration
+      - run: flutter config --enable-web
+        shell: bash
+
+      - name: Build flutter for web
+      - run: flutter build web --release -t lib/main.dart --web-renderer=auto --base-href /saas.template/ 
+        shell: bash
+
+      - name: Set user name
+      - run: git config user.name github-actions
+        shell: bash
+
+      - name: Set user email
+      - run: git config user.email github-actions@github.com
+        shell: bash
+
+      - name: Get latest build
+      - run: git --work-tree build/web add --all
+        shell: bash
+
+      - name: Add commit message
+      - run: git commit -m "Automatic deployment by github-actions"
+        shell: bash
+
+      - name: Push new changes
+      - run: git push origin HEAD:gh-pages --force
+        shell: bash
