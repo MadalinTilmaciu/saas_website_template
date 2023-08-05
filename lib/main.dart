@@ -3,21 +3,26 @@ import 'package:flutter/material.dart';
 import 'presentations/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+
+  runApp(const SaaSTemplate());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class SaaSTemplate extends StatelessWidget {
+  const SaaSTemplate({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'SaaS Template',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF5236FF),
+        ),
         useMaterial3: true,
       ),
-      home: const HomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePage(),
     );
   }
 }
