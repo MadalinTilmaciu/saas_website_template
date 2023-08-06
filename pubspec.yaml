@@ -7,11 +7,12 @@ environment:
   sdk: '>=3.0.5 <4.0.0'
 
 dependencies:
+  carousel_slider: ^4.2.1
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
   google_fonts: ^5.1.0
-
+  
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
@@ -41,6 +42,7 @@ flutter:
     - assets/icons/phone_2.png
     - assets/icons/pin.png
     - assets/icons/plane.png
+    - assets/icons/profile.png
     - assets/icons/rocket.png
     - assets/icons/twitter.png
     - assets/icons/user.png
@@ -53,7 +55,12 @@ flutter:
     - assets/ilustrations/ilustration_6.png
     - assets/ilustrations/ilustration_7.png
     - assets/ilustrations/ilustration_8.png
+    - assets/ilustrations/ilustration_9.png
+    - assets/ilustrations/ilustration_10.png
     - assets/ilustrations/home_banner.png
+    - assets/images/result_1643960.jpeg
+    - assets/images/result_1643962.jpeg
+    - assets/images/result_1644065.jpeg
 
   # fonts:
   #   - family: Schyler

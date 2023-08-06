@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../widgets/feature_card.dart';
+import '../widgets/testimonial_carousel.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -347,7 +348,7 @@ class HomePage extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         height: mediaQ.height / 1.5,
-                        width: mediaQ.width / 2.5,
+                        width: mediaQ.width / 2,
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: const BorderRadius.all(
@@ -451,6 +452,227 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            SizedBox(height: mediaQ.height / 3),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                backgroundColor: const Color(0xFFEFECFF),
+                fixedSize: Size(mediaQ.width / 13, 60),
+              ),
+              child: Text(
+                'How It Work',
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.w800,
+                  color: const Color(0xFF5236FF),
+                  decoration: TextDecoration.none,
+                ),
+              ),
+            ),
+            const SizedBox(height: 40),
+            Center(
+              child: SizedBox(
+                width: mediaQ.width / 3,
+                child: Column(
+                  children: <Widget>[
+                    Text(
+                      'Work smarter',
+                      style: GoogleFonts.nunito(
+                        fontSize: 48,
+                        fontWeight: FontWeight.lerp(FontWeight.w900, FontWeight.bold, 0.5),
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        height: 1,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      'with easy access for user...',
+                      style: GoogleFonts.nunito(
+                        fontSize: 48,
+                        fontWeight: FontWeight.lerp(FontWeight.w900, FontWeight.bold, 0.5),
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        height: 1,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 40),
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    height: 80,
+                    width: mediaQ.width / 5,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFF5236FF),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(16),
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '01. Create account',
+                        style: GoogleFonts.nunito(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          height: 1,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 24),
+                  Container(
+                    height: 80,
+                    width: mediaQ.width / 5,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(16),
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '02. Install tracking code',
+                        style: GoogleFonts.nunito(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black,
+                          decoration: TextDecoration.none,
+                          height: 1,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 24),
+                  Container(
+                    height: 80,
+                    width: mediaQ.width / 5,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(16),
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '03. Track analytics',
+                        style: GoogleFonts.nunito(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black,
+                          decoration: TextDecoration.none,
+                          height: 1,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Image.asset('assets/icons/profile.png'),
+                        const SizedBox(width: 16),
+                        SizedBox(
+                          width: mediaQ.width / 6,
+                          child: Text(
+                            'Create your account & start your work',
+                            style: GoogleFonts.nunito(
+                              fontSize: 32,
+                              fontWeight: FontWeight.lerp(FontWeight.w900, FontWeight.bold, 0.5),
+                              color: Colors.black,
+                              decoration: TextDecoration.none,
+                              height: 1,
+                            ),
+                            softWrap: true,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: mediaQ.width / 5,
+                      child: Text(
+                        'It is a long established fact that a reader will be by the form readable content of a page when looking at its layout. The point of using lorem Ipsum.',
+                        style: GoogleFonts.nunito(
+                          fontSize: 16,
+                          color: Colors.grey[600],
+                          decoration: TextDecoration.none,
+                          fontWeight: FontWeight.normal,
+                        ),
+                        softWrap: true,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        backgroundColor: Colors.black,
+                        fixedSize: Size(mediaQ.width / 12.5, 50),
+                      ),
+                      child: Text(
+                        'Get Started',
+                        style: GoogleFonts.nunito(
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: mediaQ.width / 10),
+                Image.asset(
+                  'assets/ilustrations/ilustration_9.png',
+                  scale: 1.15,
+                ),
+              ],
+            ),
+            const SizedBox(height: 120),
+            Stack(
+              children: <Widget>[
+                ColoredBox(
+                  color: const Color(0xFF5236FF),
+                  child: Image.asset(
+                    'assets/ilustrations/ilustration_10.png',
+                    fit: BoxFit.contain,
+                    width: double.maxFinite,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: mediaQ.height / 5),
+                  child: Center(
+                    child: SizedBox(
+                      width: mediaQ.width / 1.5,
+                      child: const TestimonialCarousel(),
+                    ),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 120),
           ],
