@@ -15,7 +15,7 @@ class SaaSTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'SaaS Template',
+      title: 'SaaSup',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF5236FF),

@@ -22,6 +22,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/icons/add.png
+    - assets/icons/amazon.png
     - assets/icons/android.png
     - assets/icons/apple.png
     - assets/icons/award.png
@@ -38,14 +39,17 @@ flutter:
     - assets/icons/logo.png
     - assets/icons/mail.png
     - assets/icons/message.png
+    - assets/icons/mastercard.png
     - assets/icons/phone.png
     - assets/icons/phone_2.png
+    - assets/icons/paypal.png
     - assets/icons/pin.png
     - assets/icons/plane.png
     - assets/icons/profile.png
     - assets/icons/rocket.png
     - assets/icons/twitter.png
     - assets/icons/user.png
+    - assets/icons/visa.png
     - assets/icons/wallet.png
     - assets/ilustrations/ilustration_1.png
     - assets/ilustrations/ilustration_2.png
@@ -57,10 +61,15 @@ flutter:
     - assets/ilustrations/ilustration_8.png
     - assets/ilustrations/ilustration_9.png
     - assets/ilustrations/ilustration_10.png
+    - assets/ilustrations/ilustration_11.png
+    - assets/ilustrations/ilustration_12.png
+    - assets/ilustrations/ilustration_13.png
     - assets/ilustrations/home_banner.png
     - assets/images/result_1643960.jpeg
     - assets/images/result_1643962.jpeg
     - assets/images/result_1644065.jpeg
+    - assets/images/article_1.png
+    - assets/images/article_2.png
 
   # fonts:
   #   - family: Schyler
