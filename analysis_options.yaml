@@ -25,6 +25,7 @@ analyzer:
     deprecated_member_use_from_same_package: ignore
     invalid_annotation_target: ignore
     non_constant_identifier_names: ignore
+    unsafe_html: ignore
   exclude:
     - "bin/cache/**"
       # Ignore protoc generated files

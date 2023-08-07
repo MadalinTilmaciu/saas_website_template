@@ -46,7 +46,7 @@ class _ArticleCardState extends State<ArticleCard> {
         height: 600,
         width: 600,
         decoration: BoxDecoration(
-          color: cardHovering ? Colors.white : Colors.grey[100],
+          color: cardHovering ? Colors.white : Colors.grey[200],
           borderRadius: BorderRadius.circular(32),
         ),
         child: Column(
@@ -138,7 +138,7 @@ class _ArticleCardState extends State<ArticleCard> {
                   textAlign: TextAlign.left,
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

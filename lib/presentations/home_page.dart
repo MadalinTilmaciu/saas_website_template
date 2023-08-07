@@ -1,3 +1,5 @@
+import 'dart:html' as html;
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -1007,6 +1009,541 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: mediaQ.height / 5),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: mediaQ.width / 7),
+                child: Divider(
+                  height: 8,
+                  color: Colors.grey[400],
+                ),
+              ),
+              SizedBox(height: mediaQ.height / 8),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: mediaQ.width / 7),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    SizedBox(
+                      width: mediaQ.width / 5,
+                      child: Column(
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Image.asset('assets/icons/logo.png'),
+                              const SizedBox(width: 6),
+                              Text(
+                                'SaaSup',
+                                style: GoogleFonts.nunito(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 24),
+                          Text(
+                            'It is a long established fact that a reader will be by the form readable content of a page when looking at its layout. The point of using lorem Ipsum.',
+                            style: GoogleFonts.nunito(
+                              fontSize: 16,
+                              fontWeight: FontWeight.normal,
+                              color: Colors.grey,
+                              decoration: TextDecoration.none,
+                              height: 1.5,
+                            ),
+                            softWrap: true,
+                          ),
+                          const SizedBox(height: 24),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Image.asset('assets/icons/mail.png'),
+                              const SizedBox(width: 8),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    'saasup@gmail.com',
+                                    style: GoogleFonts.nunito(
+                                      fontWeight: FontWeight.normal,
+                                      fontSize: 14,
+                                      color: Colors.grey,
+                                      decoration: TextDecoration.none,
+                                      height: 1.5,
+                                    ),
+                                  ),
+                                  Text(
+                                    'contact@sassup.com',
+                                    style: GoogleFonts.nunito(
+                                      fontWeight: FontWeight.normal,
+                                      fontSize: 14,
+                                      color: Colors.grey,
+                                      decoration: TextDecoration.none,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 24),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Image.asset('assets/icons/phone_2.png'),
+                              const SizedBox(width: 8),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    '+987 6541 3654',
+                                    style: GoogleFonts.nunito(
+                                      fontWeight: FontWeight.normal,
+                                      fontSize: 14,
+                                      color: Colors.grey,
+                                      decoration: TextDecoration.none,
+                                      height: 1.5,
+                                    ),
+                                  ),
+                                  Text(
+                                    '+001 6547 6589',
+                                    style: GoogleFonts.nunito(
+                                      fontWeight: FontWeight.normal,
+                                      fontSize: 14,
+                                      color: Colors.grey,
+                                      decoration: TextDecoration.none,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: mediaQ.width / 9,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                            ),
+                            child: Text(
+                              'Pages',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Colors.black,
+                                decoration: TextDecoration.none,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 16,
+                            ),
+                            child: Divider(
+                              height: 8,
+                              color: Colors.grey[400],
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                Colors.transparent,
+                              ),
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                const EdgeInsets.symmetric(horizontal: 16),
+                              ),
+                            ),
+                            child: Text(
+                              'Home',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                Colors.transparent,
+                              ),
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                const EdgeInsets.symmetric(horizontal: 16),
+                              ),
+                            ),
+                            child: Text(
+                              'About Us',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                Colors.transparent,
+                              ),
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                const EdgeInsets.symmetric(horizontal: 16),
+                              ),
+                            ),
+                            child: Text(
+                              'Integrations',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                Colors.transparent,
+                              ),
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                const EdgeInsets.symmetric(horizontal: 16),
+                              ),
+                            ),
+                            child: Text(
+                              'Pricing',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                Colors.transparent,
+                              ),
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                const EdgeInsets.symmetric(horizontal: 16),
+                              ),
+                            ),
+                            child: Text(
+                              'Features',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                Colors.transparent,
+                              ),
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                const EdgeInsets.symmetric(horizontal: 16),
+                              ),
+                            ),
+                            child: Text(
+                              'Contact Us',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: mediaQ.width / 9,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                            ),
+                            child: Text(
+                              'Utility Pages',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Colors.black,
+                                decoration: TextDecoration.none,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 16,
+                            ),
+                            child: Divider(
+                              height: 8,
+                              color: Colors.grey[400],
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                Colors.transparent,
+                              ),
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                const EdgeInsets.symmetric(horizontal: 16),
+                              ),
+                            ),
+                            child: Text(
+                              'Licenses',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                Colors.transparent,
+                              ),
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                const EdgeInsets.symmetric(horizontal: 16),
+                              ),
+                            ),
+                            child: Text(
+                              'Changelog',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: mediaQ.width / 5,
+                      height: mediaQ.height / 3,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 40,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              'Download',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
+                                color: const Color(0xFF5236FF),
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              'Its suitable to all devices and screeen',
+                              style: GoogleFonts.nunito(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 28,
+                                color: Colors.black,
+                                decoration: TextDecoration.none,
+                                height: 1,
+                              ),
+                              softWrap: true,
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              'It is a long established fact that a reader will be by the form readable content of a page when looking at its layout. The point of using lorem Ipsum.',
+                              style: GoogleFonts.nunito(
+                                fontSize: 14,
+                                fontWeight: FontWeight.normal,
+                                color: Colors.grey,
+                                decoration: TextDecoration.none,
+                              ),
+                              softWrap: true,
+                            ),
+                            const SizedBox(height: 24),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: () {},
+                                  style: ElevatedButton.styleFrom(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    backgroundColor: Colors.black,
+                                    elevation: 0,
+                                    side: const BorderSide(
+                                      color: Colors.grey,
+                                    ),
+                                    fixedSize: const Size(160, 50),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                    children: <Widget>[
+                                      Image.asset('assets/icons/apple.png'),
+                                      const SizedBox(width: 4),
+                                      Text(
+                                        'App Store',
+                                        style: GoogleFonts.nunito(
+                                          fontWeight: FontWeight.w700,
+                                          color: Colors.white,
+                                          decoration: TextDecoration.none,
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                ElevatedButton(
+                                  onPressed: () {},
+                                  style: ElevatedButton.styleFrom(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    backgroundColor: Colors.grey[200],
+                                    elevation: 0,
+                                    side: const BorderSide(
+                                      color: Colors.grey,
+                                    ),
+                                    fixedSize: const Size(160, 50),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                    children: <Widget>[
+                                      Image.asset('assets/icons/android.png'),
+                                      const SizedBox(width: 4),
+                                      Text(
+                                        'Play Store',
+                                        style: GoogleFonts.nunito(
+                                          fontWeight: FontWeight.w700,
+                                          color: Colors.black,
+                                          decoration: TextDecoration.none,
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: mediaQ.height / 6),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: mediaQ.width / 7),
+                child: Divider(
+                  height: 8,
+                  color: Colors.grey[400],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: mediaQ.width / 7,
+                  vertical: 24,
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text(
+                      'Copyright @ SaaSup | Designed by VictorFlow - Powered by Mădălin Tîlmaciu',
+                      style: GoogleFonts.nunito(
+                        fontWeight: FontWeight.w700,
+                        color: Colors.grey,
+                        decoration: TextDecoration.none,
+                        fontSize: 14,
+                      ),
+                    ),
+                    Row(
+                      children: <Widget>[
+                        MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: GestureDetector(
+                            onTap: () {
+                              html.window.open('https://www.facebook.com/constantinmadalintilmaciu', 'new tab');
+                            },
+                            child: Image.asset('assets/icons/facebook.png'),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: GestureDetector(
+                            onTap: () {
+                              html.window.open('https://twitter.com/MadalinTilmaciu', 'new tab');
+                            },
+                            child: Image.asset('assets/icons/twitter.png'),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: GestureDetector(
+                            onTap: () {
+                              html.window.open('https://www.linkedin.com/in/constantinmadalintilmaciu/', 'new tab');
+                            },
+                            child: Image.asset('assets/icons/linkedin.png'),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: GestureDetector(
+                            onTap: () {
+                              html.window.open('https://www.instagram.com/madalin.tilmaciu/', 'new tab');
+                            },
+                            child: Image.asset('assets/icons/instagram.png'),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
